@@ -1,0 +1,92 @@
+body {
+    background-image:url("https://coolbackgrounds.io/images/backgrounds/white/white-triangle-369b8d2d.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+   
+
+   }
+
+   h4{
+       font-family:Georgia, 'Times New Roman', Times, serif;
+       font-weight: bolder;
+       font-size: large;
+       color: rgb(34, 88, 104);
+   }
+    .price {
+        color:rgb(17, 14, 14);
+        font-weight: bolder;
+    }
+    .item-text {
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        
+    }
+.section-center {
+    max-width: 1170px;
+    display: grid;
+    justify-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    gap:3rem 2rem;
+    margin-top: 5rem;
+}
+
+.menu-item{
+    display: grid;
+    max-width: 25rem;
+    gap:1rem 2rem;
+   
+}
+.photo {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 20px;
+}
+.item-info header {
+    display: flex;
+    justify-content:space-between;
+}
+
+.btn-container {
+    display: flex;
+    justify-content:center;
+   
+
+}
+.filter-btn {
+    margin:0.5rem;
+    color: black;
+}
+
+
+
+
+
+   @media screen and (min-width: 768px)  {
+       .menu-item{
+           grid-template-columns: 225px 1fr;
+           gap: 0 1.25rem;
+           max-width: 40rem;
+       }
+       .photo {
+           height: 175px;
+       }
+   }
+
+   @media screen and (min-width: 1200px) {
+       .section-center {
+           width: 95vw;
+           grid-template-columns: 1fr 1fr;
+       }
+       .photo{
+           height: 150px;
+       }
+   }
+   
